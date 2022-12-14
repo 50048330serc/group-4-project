@@ -14,8 +14,10 @@
     <name>group-4-project</name>
     <description>Azure Final Project - Group 4</description>
     <properties>
-        <java.version>19</java.version>
+        <java.version>17</java.version>
         <spring-cloud-azure.version>6.0.0-beta.4</spring-cloud-azure.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
