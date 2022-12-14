@@ -53,4 +53,4 @@ jobs:
           app-name: 'ASOSGroup4ProjectAPI'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_56229AAC077940A29EFC72BA54008506 }}
-          package: '*.jar'
+          package: '${{ github.workspace }}/target/group-4-project-0.0.1-SNAPSHOT.jar'
