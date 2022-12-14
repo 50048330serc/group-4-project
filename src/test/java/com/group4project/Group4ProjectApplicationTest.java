@@ -7,25 +7,8 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest()
 class Group4ProjectApplicationTest {
-
-    @LocalServerPort
-    private int port;
-
-    @Autowired
-    private WebTestClient webTestClient;
-
-    @Test
-    public void greetingShouldReturnDefaultMessage() {
-        this.webTestClient
-                .get()
-                .uri("products/67431224/")
-                .exchange()
-                .expectBody()
-                .jsonPath("$productID").isEqualTo(67431224);
-
-    }
 
 
     @Test
